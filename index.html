@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!--
+use seanhalpin.io for inspiration (especially about footer)
 -What this webpage will be:
 -A portfolio for all of my work
 all of the normal text in the page which would usually be paragraphs will be
@@ -25,31 +26,56 @@ dissapear
 rectangle that slides to go to the element you are currently selecting,
 When you select a new page to go to this box fills in with black from the top
 going to the bottom, the opposite of what happens when you leave a page
+-maybe have little underlines start as a point under the end of important words and then
+extend into a line that spans the full word over time and then after a second
+or so have them shrink back to a point but at the beginning of the word and then the point 
+dissappear
+-On resume page have the poem explaining the resume and then if you scroll down once or
+if you press the down arrow that will appear at the bottom of the screen it will scroll all
+the way down to a page just containing my resume
+-footer is a slightly off shade of grey at the bottom, header is the same color as rest of the page
 
 
 -->
 <html>
 <head>
-<title>Page Title</title>
+    <title>Kyle Swensson</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Abel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css"> <!-- normalize must come first so main can override it -->
 </head>
-<header>
+<div id="head">
+	<p> image goes here </p>
+	<div id="headlist">
+		<ul> 
+			<li>About</li>
+			<li>Projects</li>
+			<li>Resume</li>
+			<li>Notes</li>
+		</ul>	
+	</div>
+</div>
+<div id="bodyOne">
 	<h1>Portfolio of Kyle Swensson</h1>
 	<h2>A developer of frontend, backend, and game technologies</h2>
-	<ul> 
-		<li>About</li>
-		<li>Projects</li>
-		<li>Resume</li>
-		<li>Notes</li>
-	</ul>	
-</header>
-<body>
-
-<h1>this is a header</h1>
-<p>My first paragraph</p>
-
-</body>
-<footer>
-</footer>
+</div>
+<div id="foot">
+	<ul>
+		<li>
+			<a href="github.com/kyleswensson">Github</a> 
+		</li>
+		<li>
+			<a href="twitter.com/genericindiedev">Twitter</a>
+		</li>
+		<li> 
+			LinkedIn <!-- have an alert pop up here showing my email and other contact information -->
+		</li>
+		<li> 
+			Contact
+		</li>
+	</ul>
+	<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
+</div>
 </html>
 
 <!-- I should create wireframes for my websites -->

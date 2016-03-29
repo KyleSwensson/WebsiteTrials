@@ -1,0 +1,24 @@
+ul li {
+	display: inline;
+	list-style-type: none;
+}
+body {
+	background-color: #cccccc;
+	text-color: #222222;
+}
+footer {
+	background-color: #aaaaaa;
+	text-color: #444444;
+}
+h1 { 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.75em;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.75em;
+}
+p {
+	font-family: 'Abel', sans-serif;
+}
+
