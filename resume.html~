@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <!--
 use seanhalpin.io for inspiration (especially about footer)
 -What this webpage will be:
@@ -43,19 +43,14 @@ will shrink to a point in the bottom left corner.
 -The poem in projects will also do this for each individual project
 
 
-
-A story of my feats
-so delicately composed
-below is my resume
-although not in prose
-
 -->
 <html>
 <head>
-    <title>Kyle Swensson</title>
+<title>Kyle Swensson | Resume</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Abel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css"> <!-- normalize must come first so main can override it -->
+    <link rel="stylesheet" href="css/resume.css">
 </head>
 <div id="wrapper">
 <div id="head">
@@ -68,26 +63,32 @@ although not in prose
 		</ul>	
 	</div>
 </div>
-<div id="bodyOne">
-	<h1>Portfolio of Kyle Swensson</h1>
-	<h2>A developer of frontend, backend, and game technologies</h2>
-</div>
-<div id="foot">
-	<ul>
-		<li>
-			<a href="https://github.com/kyleswensson">Github</a> 
-		</li>
-		<li>
-			<a href="https://twitter.com/genericindiedev">Twitter</a>
-		</li>
-		<li> 
-			LinkedIn <!-- have an alert pop up here showing my email and other contact information -->
-		</li>
-		<li> 
-			Contact
-		</li>
-	</ul>
-	<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
+<div id="bodyRes">
+	<div id="bodyResPoem">
+	<p> A tale of my feats </p>
+	<p> so delicately composed </p>
+	<p> below is my resume </p>
+	<p> although not in prose </p>
+
+	<embed src="Resume.pdf" width="800px" height="2100px">
+	</div>
+	<div id="foot">
+		<ul>
+			<li>
+				<a href="https://github.com/kyleswensson">Github</a> 
+			</li>
+			<li>
+				<a href="https://twitter.com/genericindiedev">Twitter</a>
+			</li>
+			<li> 
+				LinkedIn <!-- have an alert pop up here showing my email and other contact information -->
+			</li>
+			<li> 
+				Contact
+			</li>
+		</ul>
+		<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
+	</div>
 </div>
 </div>
 </html>

@@ -34,7 +34,20 @@ dissappear
 if you press the down arrow that will appear at the bottom of the screen it will scroll all
 the way down to a page just containing my resume
 -footer is a slightly off shade of grey at the bottom, header is the same color as rest of the page
+-on the homepage have a poem be typed out that mentions about projects and 
+resume. with the words about project and resume being links. These links
+should be in a slightly different color and in bolder font than all the other
+texts and when you mouse over them a point should appear under the right
+bottom corner and grow to an underline, when mouse over i ended the underline
+will shrink to a point in the bottom left corner.
+-The poem in projects will also do this for each individual project
 
+
+
+A story of my feats
+so delicately composed
+below is my resume
+although not in prose
 
 -->
 <html>
@@ -48,10 +61,9 @@ the way down to a page just containing my resume
 	<p> image goes here </p>
 	<div id="headlist">
 		<ul> 
-			<li>About</li>
-			<li>Projects</li>
-			<li>Resume</li>
-			<li>Notes</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
 		</ul>	
 	</div>
 </div>
@@ -62,10 +74,10 @@ the way down to a page just containing my resume
 <div id="foot">
 	<ul>
 		<li>
-			<a href="github.com/kyleswensson">Github</a> 
+			<a href="https://github.com/kyleswensson">Github</a> 
 		</li>
 		<li>
-			<a href="twitter.com/genericindiedev">Twitter</a>
+			<a href="https://twitter.com/genericindiedev">Twitter</a>
 		</li>
 		<li> 
 			LinkedIn <!-- have an alert pop up here showing my email and other contact information -->
