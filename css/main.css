@@ -79,3 +79,36 @@ p {
 	background-color:#333333;
 	color: #cccccc;
 }
+
+.bordbox {
+	text-align: center;
+	width: 10em;
+	border: 0.15em solid #ddd;
+	border-radius: 0.15em;
+
+}
+
+#bodyOne ul {
+	padding-top: 12em;
+	text-align:center;
+}
+#bodyOne ul li {
+	padding-left: 2em; 
+	padding-right: 2em;
+
+}
+#bodyOne ul li a {
+
+/*	outline-style: solid;
+	outline-color: #ddd;
+	outline-width: 0.155555em; */
+}
+
+
+#bodyOne ul li, #bodyOne ul li a {
+	font-size: 1.75em;
+	font-weight: bold;
+	text-align: center;
+	color: #444;
+}
+

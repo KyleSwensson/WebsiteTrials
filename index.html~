@@ -41,7 +41,16 @@ texts and when you mouse over them a point should appear under the right
 bottom corner and grow to an underline, when mouse over i ended the underline
 will shrink to a point in the bottom left corner.
 -The poem in projects will also do this for each individual project
-
+-In main page three icons will float in from below and be about project and
+resume, they will fade in as they float up. once they reach the desired height
+a stationary grey (slightly darker than background) box outline will fade in to surround
+them giving them a button-like appearance. when you mouse over them the grey 
+box around them will be filled in with a darker black box outline from bottom 
+left to top right
+-Instead of a symbol at the top left there will be another button which says 
+home on it which brings you back to the index and the box will jump accross
+the stage to get to it like it does for about projects and resume when you 
+hover over it
 
 
 A story of my feats
@@ -57,6 +66,7 @@ although not in prose
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Abel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css"> <!-- normalize must come first so main can override it -->
 </head>
+<div id="wrapper">
 <div id="head">
 	<p> image goes here </p>
 	<div id="headlist">
@@ -70,6 +80,11 @@ although not in prose
 <div id="bodyOne">
 	<h1>Portfolio of Kyle Swensson</h1>
 	<h2>A developer of frontend, backend, and game technologies</h2>
+	<ul> 
+		<li><div class="bordbox"><a href="about.html">About</a></div></li>
+		<li><div class="bordbox"><a href="projects.html">Projects</a></div></li>
+		<li><div class="bordbox"><a href="resume.html">Resume</a></div></li>
+	</ul>	
 </div>
 <div id="foot">
 	<ul>
@@ -87,6 +102,7 @@ although not in prose
 		</li>
 	</ul>
 	<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
+</div>
 </div>
 </html>
 
