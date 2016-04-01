@@ -34,11 +34,6 @@ dissappear
 if you press the down arrow that will appear at the bottom of the screen it will scroll all
 the way down to a page just containing my resume
 -footer is a slightly off shade of grey at the bottom, header is the same color as rest of the page
--on the homepage have a poem be typed out that mentions about projects and 
-resume. with the words about project and resume being links. These links
-should be in a slightly different color and in bolder font than all the other
-texts and when you mouse over them a point should appear under the right
-bottom corner and grow to an underline, when mouse over i ended the underline
 will shrink to a point in the bottom left corner.
 -The poem in projects will also do this for each individual project
 -In main page three icons will float in from below and be about project and
@@ -51,7 +46,11 @@ left to top right
 home on it which brings you back to the index and the box will jump accross
 the stage to get to it like it does for about projects and resume when you 
 hover over it
-
+-instead of having a box that moves to slide to whichever navigation element
+you are hovering over it should just be a sliding outline going
+under whatever element you are on. When you click it the sides grow up until 
+they hit the top and then the top fills in from both sides and then the box 
+fills with black up from the bottom
 
 A story of my feats
 so delicately composed
@@ -80,11 +79,11 @@ although not in prose
 <div id="bodyOne">
 	<h1>Portfolio of Kyle Swensson</h1>
 	<h2>A developer of frontend, backend, and game technologies</h2>
-	<ul> 
-		<li><div class="bordbox"><a href="about.html">About</a></div></li>
-		<li><div class="bordbox"><a href="projects.html">Projects</a></div></li>
-		<li><div class="bordbox"><a href="resume.html">Resume</a></div></li>
-	</ul>	
+	<div id="listpart">
+		<div id="bordbox1"><a href="about.html">About</a></div>
+		<div id="bordbox2"><a href="projects.html">Projects</a></div>
+		<div id="bordbox3"><a href="resume.html">Resume</a></div>
+	</div>
 </div>
 <div id="foot">
 	<ul>
