@@ -64,12 +64,12 @@ although not in prose
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Abel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css"> <!-- normalize must come first so main can override it -->
-    <script src="js/main.js"></script>
+
 </head>
 <div id="wrapper">
 <div id="head">
 	<div id="selectorRect"> </div>
-	<div id="homething" onmouseover="myExpandLine('selectorRect')" onmouseout="myShrinkLine('selectorRect')">Home  </div>
+	<div id="homething" onmouseover="myExpandLine('selectorRect','homething')" onmouseout="myShrinkLine('selectorRect')">Home  </div>
 	<div id="headlist">
 		<ul> 
 			<li><a href="about.html">About</a></li>
@@ -103,6 +103,8 @@ although not in prose
 		</li>
 	</ul>
 	<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/main.js"></script>
 </div>
 </div>
 </html>

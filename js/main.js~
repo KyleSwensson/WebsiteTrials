@@ -1,30 +1,37 @@
-function myExpandLine(elemId) {
-	var elem = document.getElementById(elemId);
-	var width = 0;
+var MOVESPEED = 2;
+function myExpandLine(elemId, textElemId) {
+	var textElem = $("#"+textElemId);
+	var textPos = textElem.position();
+	var elem2 = $("#" + elemId);
 	var id = setInterval(frame, 5);
+	var maxWidth = $("#"+textElemId).width();
+
+	elem2.css('top', textPos.top + (textElem.height() * 1.3));
+	elem2.css('left', textPos.left);
+
 	function frame() {
-		if (width >= 5) {
+		if (elem2.width() >= maxWidth) {
 		 clearInterval(id);	
 		} else {
-			width += .17;
-			elem.style.width = width + 'em';
+			elem2.width(elem2.width() + MOVESPEED);
 		}
 	}
 }
 
 
 function myShrinkLine(elemId) {
-	var elem = document.getElementById(elemId);
+	var elem = $("#" + elemId);
 	var width = 5;
+	var elemPos = elem.position();
 	var id = setInterval(frame,5);
 	function frame() {
-		if (width <= 0) {
+		if (elem.width() <= 0) {
 			clearInterval(id);
-			width = 0;
-			elem.style.width = width + 'em';
+			elem.width(0);
 		} else {
-			width -= .17;
-			elem.style.width = width + 'em';
+			elemPos.left += MOVESPEED;
+			elem.css('left', elemPos.left);
+			elem.width(elem.width() - MOVESPEED);
 		}
 	}
 }
