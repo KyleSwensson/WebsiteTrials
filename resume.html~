@@ -51,45 +51,47 @@ will shrink to a point in the bottom left corner.
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Abel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css"> <!-- normalize must come first so main can override it -->
     <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/resumeRight.css">
 </head>
 <div id="wrapper">
 <div id="head">
-	<p> image goes here </p>
+	<div id="selectorRect" class="underL"> </div>
+	<div id="homething" onmouseover="myExpandLine('selectorRect','homething')" onmouseout="myShrinkLine('selectorRect')"><a href="index.html">Home</a>  </div>
 	<div id="headlist">
 		<ul> 
-			<li><a href="about.html">About</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="resume.html">Resume</a></li>
+			<div id="selRect2" class="underL"></div>
+			<li ><a href="about.html"  id="listele1" onmouseover="myExpandLine('selRect2','listele1')" onmouseout="myShrinkLine('selRect2')">About</a></li>
+			<div id="selRect3" class="underL"></div>
+			<li><a href="projects.html"  id="listele2" onmouseover="myExpandLine('selRect3','listele2')" onmouseout="myShrinkLine('selRect3')">Projects</a></li>
+			<div id="selRect4" class="underL"></div>
+			<li><p class="fakeLink" id="listele3" onmouseover="myExpandLine('selRect4','listele3')" onmouseout="myShrinkLine('selRect4')">Resume</p></li>
 		</ul>	
 	</div>
 </div>
 <div id="bodyRes">
 	<div id="bodyResPoem">
-	<p> A tale of my feats </p>
-	<p> so delicately composed </p>
-	<p> below is my resume </p>
-	<p> although not in prose </p>
+	<p id="resumeh1"> Resume </p>
 
 	<embed src="Resume.pdf" width="800px" height="2100px">
 	</div>
+</div>
 	<div id="foot">
 		<ul>
 			<li>
 				<a href="https://github.com/kyleswensson">Github</a> 
 			</li>
-			<li>
-				<a href="https://twitter.com/genericindiedev">Twitter</a>
+			<li> 
+				<a href="https://www.linkedin.com/in/kyle-swensson-0a3631117/">Linkedin</a>
 			</li>
 			<li> 
-				LinkedIn <!-- have an alert pop up here showing my email and other contact information -->
-			</li>
-			<li> 
-				Contact
+				<a href=mailto:kyle.swensson@gmail.com">Contact</a>
 			</li>
 		</ul>
 		<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/resume.js"></script>
 	</div>
-</div>
 </div>
 </html>
 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+use seanhalpin.io for inspiration (especially about footer)
+-What this webpage will be:
+-A portfolio for all of my work
+all of the normal text in the page which would usually be paragraphs will be
+written in prose, just because it's interesting and different and I think it 
+would lend itself to creating a very unique website and learning a lot of new
+skills
+-When you go to a new part of the page the words on your current page will fade
+out, and the words on the next page will come in rhythmically in time with how
+you would read them in a poem. 
+-On some pages the words will fade in rhythmically, on some they will come in 
+from the side, and maybe on one they will wipe to become visible OR maybe on one
+all of the letters will initially be letters very jumbled and changing to new 
+letters every half second and as time goes on they will sort themselves into
+actual words (like the dyslexia site except they actually organize eventually)
+-At the top left will be my logo, which will bring you back to the main page
+which is just a few words centered in the page
+-At the top left will be a horizontal list of links to all of the parts of the page
+-There is a black box that surrounds the page you are currently on on the top
+left,and the words in it will be white instead of black. When you shift pages 
+the box will animate to shrink down into a line a line and then the line will
+dissapear
+-When hovering over pages you are not currently on there is a black outline 
+rectangle that slides to go to the element you are currently selecting,
+When you select a new page to go to this box fills in with black from the top
+going to the bottom, the opposite of what happens when you leave a page
+-maybe have little underlines start as a point under the end of important words and then
+extend into a line that spans the full word over time and then after a second
+or so have them shrink back to a point but at the beginning of the word and then the point 
+dissappear
+-On resume page have the poem explaining the resume and then if you scroll down once or
+if you press the down arrow that will appear at the bottom of the screen it will scroll all
+the way down to a page just containing my resume
+-footer is a slightly off shade of grey at the bottom, header is the same color as rest of the page
+-on the homepage have a poem be typed out that mentions about projects and 
+resume. with the words about project and resume being links. These links
+should be in a slightly different color and in bolder font than all the other
+texts and when you mouse over them a point should appear under the right
+bottom corner and grow to an underline, when mouse over i ended the underline
+will shrink to a point in the bottom left corner.
+-The poem in projects will also do this for each individual project
+
+
+-->
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+
+    <title>Kyle Swensson</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Abel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css"> <!-- normalize must come first so main can override it -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/aboutRight.css">
+</head>
+
+<div id="head">
+	<div id="selectorRect" class="underL"> </div>
+	<div  id="homething" onmouseover="myExpandLine('selectorRect','homething')" onmouseout="myShrinkLine('selectorRect')"><a class="indexLink" href="index.html">Home</a>  </div>
+	<div id="headlist">
+		<ul> 
+			<div id="selRect2" class="underL"></div>
+			<li ><p class="fakeLink" id="listele1" onmouseover="myExpandLine('selRect2','listele1')" onmouseout="myShrinkLine('selRect2')">About</p></li>
+			<div id="selRect3" class="underL"></div>
+			<li><a class="rightLink" href="projectsR.html" id="listele2" onmouseover="myExpandLine('selRect3','listele2')" onmouseout="myShrinkLine('selRect3')">Projects</a></li>
+			<div id="selRect4" class="underL"></div>
+			<li><a class="rightLink" href="resume.html" id="listele3" onmouseover="myExpandLine('selRect4','listele3')" onmouseout="myShrinkLine('selRect4')">Resume</a></li>
+		</ul>	
+	</div>
+</div>
+
+<div id="bodyOne">
+	<h1 id="abouth1"> About </h1>
+	<img id="aboutProfileImg" onload="aboutImgFadeIn()" src="editedInCirc.jpg" align="middle" >
+	<p id="aboutPara"> Hello! I'm Kyle. I am a current computer science undergrad at The University of British Columbia. I am originally from Massachusetts, however I am currently living in Vancouver. My main interests
+	lie in game, web, and mobile development but I enjoy the feild of computer science as a whole and am open to any opportunities. I am currently in school full time, and am involved with the AMS Game Development Association, 
+	however I am actively seeking work in the field as well. 
+</div>
+<div id="foot">
+	<ul>
+		<li>
+			<a href="github.com/kyleswensson">Github</a> 
+		</li>
+		<li>
+			<a href="twitter.com/genericindiedev">Twitter</a>
+		</li>
+		<li> 
+			LinkedIn <!-- have an alert pop up here showing my email and other contact information -->
+		</li>
+		<li> 
+			Contact
+		</li>
+	</ul>
+	<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
+
+</div>
+</html>
+
+<!-- I should create wireframes for my websites -->

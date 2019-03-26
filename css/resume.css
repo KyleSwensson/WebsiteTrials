@@ -1,22 +1,23 @@
 #bodyRes {
 	position: absolute;
-	top: 50%;
+	top: 47%;
 	left: 50%;
 	width: 40em;
 	height: 70%;
 	margin-left: -20em;
-	margin-top: -15%;
+	margin-top: -18%;
+	opacity: 0;
 }
 #bodyResPoem p {
-	text-align: left;
+	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 3em;
-	padding-top: 1em;
 	color: #444444;
 }
 #bodyResPoem embed {
-	padding-top: 20em;
+	padding-top: 5em;
 	padding-bottom: 4em;
+	margin-left: -5.5em;
 }	
 #foot {
 	width: 100%

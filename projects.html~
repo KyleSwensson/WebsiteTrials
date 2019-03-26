@@ -46,52 +46,106 @@ will shrink to a point in the bottom left corner.
 -->
 <html>
 <head>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/projects.js"></script>
 <title>Kyle Swensson | Resume</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Abel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css"> <!-- normalize must come first so main can override it -->
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/projectsLeft.css">
 </head>
 <div id="wrapper">
 <div id="head">
-	<p> image goes here </p>
+	<div id="selectorRect" class="underL"> </div>
+	<div id="homething" onmouseover="myExpandLine('selectorRect','homething')" onmouseout="myShrinkLine('selectorRect')"><a href="index.html">Home</a>  </div>
 	<div id="headlist">
 		<ul> 
-			<li><a href="about.html">About</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="resume.html">Resume</a></li>
+			<div id="selRect2" class="underL"></div>
+			<li ><a href="about.html" id="listele1" onmouseover="myExpandLine('selRect2','listele1')" onmouseout="myShrinkLine('selRect2')">About</a></li>
+			<div id="selRect3" class="underL"></div>
+			<li><p class="fakeLink" id="listele2" onmouseover="myExpandLine('selRect3','listele2')" onmouseout="myShrinkLine('selRect3')">Projects</p></li>
+			<div id="selRect4" class="underL"></div>
+			<li><a href="resume.html"  id="listele3" onmouseover="myExpandLine('selRect4','listele3')" onmouseout="myShrinkLine('selRect4')">Resume</a></li>
 		</ul>	
 	</div>
 </div>
 <div id="bodyRes">
-	<div id="bodyResPoem">
-		<p> One <a href="somethingelse">line</a> goes here </p>
-		<p> another goes hre </p>
-		<p> one extra here </p>
-		<p> and maybe a fourth </p>
-		<br>
-		<br>
-		<p> this is the second stanza </p>
-		<p> another <a href="something">line</a> in it </p>
-		<p> i am a dingo </p>
-		<p> this is my bingo </p>
+	<h1 id="projectsh1"> Projects </h1>
+	<div class="projectRow" id="projectRow1">
+	<div class="leftProjHolder">
+	<div id="projectBox1" class="projectBoxLeft" onmouseover="myExpandBox('projectBox1')" onmouseout="myShrinkBox('projectBox1')">
+		<div id="projectBox1Layover" class="projectBoxLayover"></div>
+		<img class="projectBoxImg" src="platformpic1.jpg">
+		<h3 id="projectBox1Ti" class="projectBoxTitle"> Shooting Platformer </h3>
+		<p id="projectBox1Te" class="projectBoxText">This is a game created in Java, using the LibGDX library. It is a procedurally generated dungeon crawler in which you make your way through the dungeon, shooting enemies, trying to get as far as possible. Currently in an early alpha. <a href="http://github.com/KyleSwensson/shooting-platformer"> Github </a></p>
 	</div>
+	</div>
+	<div class ="rightProjHolder">
+	<div id="projectBox2" class="projectBoxRight" onmouseover="myExpandBox('projectBox2')" onmouseout="myShrinkBox('projectBox2')">
+		<div id="projectBox2Layover" class="projectBoxLayover"></div>
+		<img class="projectBoxImg" src="jewelPic1.jpg">
+		<h3 id="projectBox2Ti" class="projectBoxTitle"> Jewel Matching </h3>
+		<p id="projectBox2Te" class="projectBoxText"> A game created in C# using the Microsoft XNA library. A clone of common match-three games made to get practice using C# and XNA. Gained expereince animating between different board states, implementing click and drag controls, and developing a way to quickly check for a large number of possible win conditions. <a href="http://github.com/KyleSwensson/jewel-matching"> Github</a>  </p>
+	</div>
+	</div>
+	</div>
+
+	<div class="projectRow" id="projectRow2" >
+	<div class="leftProjHolder">
+	<div id="projectBox3" class="projectBoxLeft" onmouseover="myExpandBox('projectBox3')" onmouseout="myShrinkBox('projectBox3')">
+		<div id="projectBox3Layover" class="projectBoxLayover"></div>
+		<img class="projectBoxImg" src="alienGamePic.jpg">
+		<h3 id="projectBox3Ti" class="projectBoxTitle"> Alien Space Shooter </h3>
+		<p id="projectBox3Te" class="projectBoxText"> A game created in ActionScript 3, using Acobe Flash. inspired by parachuter games playable on old ipods with a scroll wheel.  Published on Kongregate <a href="http://www.kongregate.com/games/vostage/alienator">here</a></p>
+	</div>
+	</div>
+	<div class="rightProjHolder">
+	<div id="projectBox4" class="projectBoxRight" onmouseover="myExpandBox('projectBox4')" onmouseout="myShrinkBox('projectBox4')">
+		<div id="projectBox4Layover" class="projectBoxLayover"></div>
+		<img class="projectBoxImg" src="cutleryGamePic.jpg">
+		<h3 id="projectBox4Ti" class="projectBoxTitle"> Cutlery Attack </h3>
+		<p id="projectBox4Te" class="projectBoxText">
+	       	A game created in actionscript 3, using Adobe Flash. Made for a game competition which had a utensil theme. Try to bounce utensils falling from the sky into their respective drawers for points, lose lives if you improperly sort utensils or let them drop. Published on Kongregate <a href="http://www.kongregate.com/games/vostage/cutlery-attack">here</a></p>
+
+	</div>
+	</div>
+	</div>
+	<div class="projectRow" id="projectRow3">
+	<div class="leftProjHolder">
+	<div id="projectBox5" class="projectBoxLeft" onmouseover="myExpandBox('projectBox5')" onmouseout="myShrinkBox('projectBox5')">
+		<div id="projectBox5Layover" class="projectBoxLayover"></div>
+		<img class="projectBoxImg" src="mahuizoPic.jpg">
+		<h3 id="projectBox5Ti" class="projectBoxTitle"> Mahuizo </h3>
+		<p id="projectBox5Te" class="projectBoxText"> A game made with the AMS Game Development Association for Global Game Jam 2016 to fit the ritual theme. Made in Unity, with C#. Included a procedurally generated map layout, and AI for the NPCs and police. More information and download available on Global Game Jam's <a href="http://globalgamejam.org/2016/games/mahuizo">website</a> </p>
+	</div>
+	</div>
+	<div class ="rightProjHolder">
+	<div id="projectBox6" class="projectBoxRight" onmouseover="myExpandBox('projectBox6')" onmouseout="myShrinkBox('projectBox6')">
+		<div id="projectBox6Layover" class="projectBoxLayover"></div>
+		<img class="projectBoxImg" src="pacMaps.jpg">
+		<h3 id="projectBox6Ti" class="projectBoxTitle"> Pac-Maps </h3>
+		<p id="projectBox6Te" class="projectBoxText"> An app made at NWHacks 2016 with a team of 4. Intended to make running more interesting, has you move in real life to locations on a map to collect pellets and run away from enemies. More information available on <a href="http://devpost.com/software/nwhacks-7bm80y">Devpost</a> </p>
+	</div>
+	</div>
+	</div>
+</div>
+
 	<div id="foot">
 		<ul>
 			<li>
 				<a href="https://github.com/kyleswensson">Github</a> 
 			</li>
-			<li>
-				<a href="https://twitter.com/genericindiedev">Twitter</a>
+			<li> 
+				<a href="https://www.linkedin.com/in/kyle-swensson-0a3631117/">Linkedin</a>
 			</li>
 			<li> 
-				LinkedIn <!-- have an alert pop up here showing my email and other contact information -->
-			</li>
-			<li> 
-				Contact
+				<a href=mailto:kyle.swensson@gmail.com">Contact</a>
 			</li>
 		</ul>
 		<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
+
 	</div>
 </div>
 </div>

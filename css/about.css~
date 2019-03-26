@@ -1,0 +1,76 @@
+img {
+	width: 15em;
+	height: 15em;
+	display: block;
+	margin: 0 auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+h1, h2 {
+	text-align: center;
+}
+#bodyOne h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3em;
+	padding-top: 0em;
+	color: #444444;
+	font-weight: normal;
+}
+#bodyOne p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: .5em;
+	color: #555555;
+	font-weight: normal;
+}
+#abouth1 {
+	animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-webkit-animation: fadein 3s;
+	-o-animation: fadein 3s;
+}
+#aboutPara {
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	animation: fadein 3s;
+	-moz-animation: fadein 3s;
+	-webkit-animation: fadein 3s;
+	-o-animation: fadein 3s;
+}
+#bodyOne {
+	margin-top: -20%;
+}
+/***** ANIMATIONS *******/
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

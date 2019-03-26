@@ -1,0 +1,60 @@
+<!--
+use seanhalpin.io for inspiration (especially about footer)
+-What this webpage will be:
+-A portfolio for all of my work
+all of the normal text in the page which would usually be paragraphs will be
+written in prose, just because it's interesting and different and I think it 
+would lend itself to creating a very unique website and learning a lot of new
+skills
+-When you go to a new part of the page the words on your current page will fade
+out, and the words on the next page will come in rhythmically in time with how
+you would read them in a poem. 
+-On some pages the words will fade in rhythmically, on some they will come in 
+from the side, and maybe on one they will wipe to become visible OR maybe on one
+all of the letters will initially be letters very jumbled and changing to new 
+letters every half second and as time goes on they will sort themselves into
+actual words (like the dyslexia site except they actually organize eventually)
+-At the top left will be my logo, which will bring you back to the main page
+which is just a few words centered in the page
+-At the top left will be a horizontal list of links to all of the parts of the page
+-There is a black box that surrounds the page you are currently on on the top
+left,and the words in it will be white instead of black. When you shift pages 
+the box will animate to shrink down into a line a line and then the line will
+dissapear
+-When hovering over pages you are not currently on there is a black outline 
+rectangle that slides to go to the element you are currently selecting,
+When you select a new page to go to this box fills in with black from the top
+going to the bottom, the opposite of what happens when you leave a page
+-maybe have little underlines start as a point under the end of important words and then
+extend into a line that spans the full word over time and then after a second
+or so have them shrink back to a point but at the beginning of the word and then the point 
+dissappear
+-On resume page have the poem explaining the resume and then if you scroll down once or
+if you press the down arrow that will appear at the bottom of the screen it will scroll all
+the way down to a page just containing my resume
+-The poem in projects will also do this for each individual project (the underline thing that is)
+-In main page three icons will float in from below and be about project and
+resume, they will fade in as they float up. once they reach the desired height
+a stationary grey (slightly darker than background) box outline will fade in to surround
+them giving them a button-like appearance. when you mouse over them the grey 
+box around them will be filled in with a darker black box outline from bottom 
+left to top right
+-Instead of a symbol at the top left there will be another button which says 
+home on it which brings you back to the index and the box will jump accross
+the stage to get to it like it does for about projects and resume when you 
+hover over it
+-instead of having a box that moves to slide to whichever navigation element
+you are hovering over it should just be a sliding outline going
+under whatever element you are on. When you click it the sides grow up until 
+they hit the top and then the top fills in from both sides and then the box 
+fills with black up from the bottom
+-Have links in projects section have a black outline box pulse around them starting from the bottom left then moving to the top right every 3 or so seconds to highlight that it is a link
+-when hover over links in projects black rectangle filled encloses them and they
+display a picture over the top of them, fading in from bottom
+
+A story of my feats
+so delicately composed
+below is my resume
+although not in prose
+
+-->

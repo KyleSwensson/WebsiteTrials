@@ -69,23 +69,28 @@ although not in prose
 </head>
 <div id="wrapper">
 <div id="head">
-	<div id="selectorRect"> </div>
+	<div id="selectorRect" class="underL"> </div>
 	<div id="homething" onmouseover="myExpandLine('selectorRect','homething')" onmouseout="myShrinkLine('selectorRect')">Home  </div>
 	<div id="headlist">
 		<ul> 
-			<li><a href="about.html">About</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="resume.html">Resume</a></li>
+			<div id="selRect2" class="underL"></div>
+			<li ><a href="about.html"  id="listele1" onmouseover="myExpandLine('selRect2','listele1')" onmouseout="myShrinkLine('selRect2')">About</a></li>
+			<div id="selRect3" class="underL"></div>
+			<li><a href="projects.html"  id="listele2" onmouseover="myExpandLine('selRect3','listele2')" onmouseout="myShrinkLine('selRect3')">Projects</a></li>
+			<div id="selRect4" class="underL"></div>
+			<li><a href="resume.html"  id="listele3" onmouseover="myExpandLine('selRect4','listele3')" onmouseout="myShrinkLine('selRect4')">Resume</a></li>
 		</ul>	
 	</div>
 </div>
 <div id="bodyOne">
-	<h1>Portfolio of Kyle Swensson</h1>
-	<h2>A developer of frontend, backend, and game technologies</h2>
+
+	<h1 id="maintitle">Kyle Swensson</h1>
+	<h2 id="subtitle">Software Developer</h2>
 	<div id="listpart">
-		<div id="bordbox1"><a href="about.html">About</a></div>
-		<div id="bordbox2"><a href="projects.html">Projects</a></div>
-		<div id="bordbox3"><a href="resume.html">Resume</a></div>
+		<a href="about.html" id="bordbox1">About</a>
+		<a href="projects.html" id="bordbox2">Projects</a>
+		<a href="resume.html" id="bordbox3">Resume</a>
+		<!--			<div id="bordbox1" href="about.html"><a  href="about.html">About</a></div> --!>
 	</div>
 </div>
 <div id="foot">
@@ -93,19 +98,17 @@ although not in prose
 		<li>
 			<a href="https://github.com/kyleswensson">Github</a> 
 		</li>
-		<li>
-			<a href="https://twitter.com/genericindiedev">Twitter</a>
+		<li> 
+			<a href="https://www.linkedin.com/in/kyle-swensson-0a3631117/">Linkedin</a>
 		</li>
 		<li> 
-			LinkedIn <!-- have an alert pop up here showing my email and other contact information -->
-		</li>
-		<li> 
-			Contact
+			<a href="mailto:kyle.swensson@gmail.com">Contact</a>
 		</li>
 	</ul>
 	<p style="text-align:center;"> &copy; 2016 Kyle Swensson </p>
 	<script src="js/jquery-1.12.3.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/index.js"></script>
 </div>
 </div>
 </html>
